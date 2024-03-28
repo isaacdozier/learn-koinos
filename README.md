@@ -30,7 +30,8 @@ npm install @koindx/v2-sdk
 Example_4.js : returns Koin & USDT Pool Reserves
 
 ```javascript
-const { ChainId, Fetcher, KOIN, Token} = require("@koindx/v2-sdk");
+const { ChainId, Fetcher, KOIN, Token, Percent} = require("@koindx/v2-sdk");
+const BigNumber = require('bignumber.js');
 
 async function go(){
     try{
@@ -46,13 +47,14 @@ async function go(){
         // This retrieves the Koin/USDT pool info by utilizing the Koindx SDK
         const PAIR = await Fetcher.fetchPairData(ChainId.MAINNET, koin, usdt);
 
-        // Lets declare our availbile reserves to get the pools current ratio
+        // Lets declare our availbile reserves to get an estimated ratio
         // This can be used to get an estimated exchange rate for any given pool
-        const koin_reserves = PAIR.reserve_0
-        const usdt_reserves = PAIR.reserve_1
+        // We are using Percent to parse a BigNumber.js object
+        const koin_reserves = new Percent(PAIR.reserve_0)
+        const usdt_reserves = new Percent(PAIR.reserve_1)
 
-        console.log('Koin Reserves: ', koin_reserves)
-        console.log('USDT Reserves: ', usdt_reserves)
+        console.log('Koin Reserves: ', koin_reserves.numerator)
+        console.log('USDT Reserves: ', usdt_reserves.numerator / usdt_reserves.denominator)
 
     } catch (error) {
         console.error(error);
@@ -75,15 +77,21 @@ Koin Reserves:  BigNumber { s: 1, e: 12, c: [ 8752538877288 ] }
 USDT Reserves:  877155023.1824
 ```
 
-BigNumber.js is an arithmitic standard used for working with a wide range of different number types.
+BigNumber.js is an arithmitic standard used for working with a wide range of numbers, string and object types representing a numeric value.
+
+"The library exports a single constructor function, BigNumber, which accepts a value of type Number, String or BigNumber"
+
+We are only reading these values as they are returned to us, but if you want to create them in you app you need to include the dependency below.
+
 
 ```javascript
 const BigNumber = require('bignumber.js');
 ```
 
-"The library exports a single constructor function, BigNumber, which accepts a value of type Number, String or BigNumber"
-
 This makes working with numbers easier for developers.
+
+[Learn how to work with BigNumber.js](https://github.com/MikeMcl/bignumber.js)
+
 
 ## Arithmic functions with numbers, strings or big numbers
 ```javascript
@@ -100,6 +108,7 @@ console.log('Koin Reserves: ', koin_reserves * '1')
 Output: Koin Reserves:  8810421275766
 ```
 
+
 ## Simplify operations with Percent
 
 ```javascript
@@ -115,5 +124,3 @@ USDT Reserves:  Percent {
   denominator: BigNumber { s: 1, e: 4, c: [ 10000 ] }
 }
 ```
-
-[Learn how to work with BigNumber.js](https://github.com/MikeMcl/bignumber.js)
