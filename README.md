@@ -6,6 +6,7 @@ Koinos is made to be accessible to developers and users. With just a few lines o
 
 ```sh
 git clone https://github.com/isaacdozier/learn-koinos.git
+cd learn-koinos
 ```
 
 [How to Clone a Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
@@ -49,4 +50,4 @@ go()
 node example_2.js
 ```
 
-![src2 console output example](https://github.com/isaacdozier/learn-koinos/blob/main/src2%20console%20output.png)
+![src2 console output example](https://github.com/isaacdozier/learn-koinos/blob/main/img/src2%20console%20output.png)
