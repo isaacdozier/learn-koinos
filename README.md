@@ -90,7 +90,7 @@ const BigNumber = require('bignumber.js');
 
 This makes working with numbers easier for developers.
 
-[Learn how to work with BigNumber.js](https://github.com/MikeMcl/bignumber.js)
+[Learn how to work with BigNumber.js](https://mikemcl.github.io/bignumber.js/)
 
 
 ## Arithmic functions with numbers and strings
