@@ -93,7 +93,7 @@ This makes working with numbers easier for developers.
 [Learn how to work with BigNumber.js](https://github.com/MikeMcl/bignumber.js)
 
 
-## Arithmic functions with numbers, strings or big numbers
+## Arithmic functions with numbers and strings
 ```javascript
 console.log('Koin Reserves: ', koin_reserves * 1)
 ```
