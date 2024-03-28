@@ -29,7 +29,7 @@ npm install @koindx/v2-sdk
 
 Example 2: returns Koin token data
 
-```sh
+```javascript
 const { ChainId, KOIN } = require("@koindx/v2-sdk");
 
 async function go(){
