@@ -31,8 +31,6 @@ npm install @koindx/v2-sdk
 
 [The Basics of Dependencies for Node.js & NPM](https://nodesource.com/blog/the-basics-of-package-json-in-node-js-and-npm/)
 
-[Koindx V2-SDK Examples](https://docs.koindx.com/sdk/v2-sdk/examples)
-
 ## Run Examples
 
 Example_4.js : returns Koin & USDT Pool Reserves
@@ -71,6 +69,8 @@ async function go(){
 
 go()
 ```
+
+[Koindx V2-SDK Examples](https://docs.koindx.com/sdk/v2-sdk/examples)
 
 ## Terminal
 
