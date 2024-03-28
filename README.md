@@ -46,7 +46,7 @@ async function go(){
         // This retrieves the Koin/USDT pool info by utilizing the Koindx SDK
         const PAIR = await Fetcher.fetchPairData(ChainId.MAINNET, koin, usdt);
 
-        // Lets declare our availbile reserves to get an estimated ratio
+        // Lets declare our availbile reserves to get the pools current ratio
         // This can be used to get an estimated exchange rate for any given pool
         const koin_reserves = PAIR.reserve_0
         const usdt_reserves = PAIR.reserve_1
