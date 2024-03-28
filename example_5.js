@@ -1,4 +1,5 @@
-const { ChainId, Fetcher, KOIN, Token} = require("@koindx/v2-sdk");
+const { ChainId, Fetcher, KOIN, Token, Percent} = require("@koindx/v2-sdk");
+const BigNumber = require('bignumber.js');
 
 async function go(){
     try{
@@ -16,11 +17,11 @@ async function go(){
 
         // Lets declare our availbile reserves to get an estimated ratio
         // This can be used to get an estimated exchange rate for any given pool
-        const koin_reserves = PAIR.reserve_0
-        const usdt_reserves = PAIR.reserve_1
+        const koin_reserves = new Percent(PAIR.reserve_0)
+        const usdt_reserves = new Percent(PAIR.reserve_1)
 
         // Calculate reserve ratio for Koin:USDT pool
-        const results = koin_reserves / usdt_reserves 
+        const results = koin_reserves.numerator / usdt_reserves.numerator
 
         console.log(results)
 

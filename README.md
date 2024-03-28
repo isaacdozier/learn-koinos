@@ -71,8 +71,49 @@ node example_4.js
 ## Output
 
 ```sh
-Koin Reserves:  BigNumber { s: 1, e: 12, c: [ 8840149497854 ] }
-USDT Reserves:  BigNumber { s: 1, e: 12, c: [ 8684394652263 ] }
+Koin Reserves:  BigNumber { s: 1, e: 12, c: [ 8752538877288 ] }
+USDT Reserves:  877155023.1824
+```
+
+BigNumber.js is an arithmitic standard used for working with a wide range of different number types.
+
+```javascript
+const BigNumber = require('bignumber.js');
+```
+
+"The library exports a single constructor function, BigNumber, which accepts a value of type Number, String or BigNumber"
+
+This makes working with numbers easier for developers.
+
+## Arithmic functions with numbers, strings or big numbers
+```javascript
+console.log('Koin Reserves: ', koin_reserves * 1)
+```
+```sh
+Output: Koin Reserves:  8810421275766
+```
+
+```javascript
+console.log('Koin Reserves: ', koin_reserves * '1')
+```
+```sh
+Output: Koin Reserves:  8810421275766
+```
+
+## Simplify operations with Percent
+
+```javascript
+const koin_reserves = new Percent(PAIR.reserve_0)
+const usdt_reserves = new Percent(PAIR.reserve_1)
+
+console.log('Koin Reserves: ', koin_reserves.numerator / koin_reserves.denominator)
+```
+```sh
+Koin Reserves:  875956851.2107
+USDT Reserves:  Percent {
+  numerator: BigNumber { s: 1, e: 12, c: [ 8764493211385 ] },
+  denominator: BigNumber { s: 1, e: 4, c: [ 10000 ] }
+}
 ```
 
 [Learn how to work with BigNumber.js](https://github.com/MikeMcl/bignumber.js)
