@@ -18,6 +18,7 @@ git clone https://github.com/isaacdozier/learn-koinos.git
 ## Install Dependencies
 
 [Koindx V2 SDK - github.com](https://github.com/koindx/v2-sdk)
+
 [Koindx V2 SDK - npmjs.com](https://www.npmjs.com/package/@koindx/v2-sdk)
 
 ```sh
@@ -25,6 +26,25 @@ npm i @koindx/v2-sdk
 ```
 
 ## Run Examples
+
+```sh
+const { ChainId, KOIN } = require("@koindx/v2-sdk");
+
+async function go(){
+    try{
+        // DECLARE ASSETS
+        // KOIN can be declared directly with Koindx sdk
+        const koin = new KOIN(ChainId.MAINNET);
+
+        console.log(koin)
+
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+go()
+```
 
 ```sh
 node src2.js
