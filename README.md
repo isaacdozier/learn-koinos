@@ -95,17 +95,17 @@ This makes working with numbers easier for developers.
 
 ## Arithmic functions with numbers and strings
 ```javascript
-console.log('Koin Reserves: ', koin_reserves * 1)
+console.log(koin_reserves * 1)
 ```
 ```sh
-Output: Koin Reserves:  8810421275766
+Output: 8810421275766
 ```
 
 ```javascript
-console.log('Koin Reserves: ', koin_reserves * '1')
+console.log(koin_reserves * '1')
 ```
 ```sh
-Output: Koin Reserves:  8810421275766
+Output: 8810421275766
 ```
 
 
