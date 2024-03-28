@@ -10,7 +10,9 @@ Koinos is made to be accessible to developers and users. With just a few lines o
 
 [Learn to Use Terminal](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line)
 
-[Install Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)
+[Install NPM/Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)
+
+[Install Git](https://github.com/git-guides/install-git)
 
 ## Clone this repo
 
