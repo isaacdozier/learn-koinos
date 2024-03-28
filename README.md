@@ -27,7 +27,7 @@ npm install @koindx/v2-sdk
 
 ## Run Examples
 
-Example_2.js : returns Koin token data
+Example_4.js : returns Koin & USDT Pool Reserves
 
 ```javascript
 const { ChainId, Fetcher, KOIN, Token} = require("@koindx/v2-sdk");
