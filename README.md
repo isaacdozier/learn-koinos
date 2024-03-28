@@ -1,6 +1,8 @@
-# How to access Koinos Blockchain Network
+# How to access Koinos Blockchain Network with Node.js
 
 Koinos is made to be accessible to developers and users. With just a few lines of code, we can interact with the blockchain.
+
+[Install Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)
 
 ## Clone this repo
 
