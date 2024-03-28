@@ -13,16 +13,18 @@ git clone https://github.com/isaacdozier/learn-koinos.git
 ## Install Dependencies
 
 ```sh
-npm i @koindx/v2-sdk
+npm install @koindx/v2-sdk
 ```
 
 [The Basics of Dependencies for Node.js & NPM](https://nodesource.com/blog/the-basics-of-package-json-in-node-js-and-npm/)
 
 [Koindx V2-SDK Github Repo](https://github.com/koindx/v2-sdk)
 
-[Koindx V2-SDK NPM Package](https://www.npmjs.com/package/@koindx/v2-sdk)
+[Koindx V2-SDK Examples](https://docs.koindx.com/sdk/v2-sdk/examples)
 
 ## Run Examples
+
+Example 2: returns Koin token data
 
 ```sh
 const { ChainId, KOIN } = require("@koindx/v2-sdk");
