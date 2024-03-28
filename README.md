@@ -2,11 +2,6 @@
 
 Koinos is made to be accessible to developers and users. With just a few lines of code, we can interact with the blockchain.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-
 ## Clone this repo
 
 [How to Clone a Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
