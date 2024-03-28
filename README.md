@@ -46,7 +46,7 @@ go()
 ```
 
 ```sh
-node src2.js
+node example_2.js
 ```
 
 ![src2 console output example](https://github.com/isaacdozier/learn-koinos/blob/main/src2%20console%20output.png)
