@@ -138,7 +138,7 @@ Find more [Koindx V2-SDK Examples](https://docs.koindx.com/sdk/v2-sdk/examples)
 
 ## Working with Numbers
 
-BigNumber.js is an mathmatic standard used for working with a wide range of numbers, strings and object types representing a numeric value.
+BigNumber.js is a mathmatic standard used for working with a wide range of numbers, strings and object types representing a numeric value.
 
 If you want to create or manipulate them in you app, you'll need to include the dependency below.
 
