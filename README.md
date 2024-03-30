@@ -179,6 +179,8 @@ let operation = a.plus(b)
 
 If you liked this guide, check out the step by step process to install a Kondor wallet to interact with the network.
 
+[How to Create a Kondor Wallet](https://dev.to/isaactdozier/lets-build-a-dapp-with-nodejs-and-koinos-pro-part-2-create-a-wallet-ngp)
+
 
 ## Support Me
 
