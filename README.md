@@ -31,7 +31,55 @@ npm install @koindx/v2-sdk
 
 [The Basics of Dependencies for Node.js & NPM](https://nodesource.com/blog/the-basics-of-package-json-in-node-js-and-npm/)
 
-## Run Examples
+Now open a terminal and run the command below.
+
+## Terminal
+
+```sh
+node example_4.js
+```
+
+Example #4 outputs USDT/Koin pair data.
+
+## Output
+
+```sh
+Pair {
+  chain: 'EiBZK_GGVP0H_fXVAM3j6EAuz3-B-l3ejxRSewi7qIBfSA==',
+  address: '16PVFQ6bwRnAZD7i3xmu6jX6MoG3vwYYgW',
+  provider: Provider {
+    rpcNodes: [ 'https://api.koinos.io' ],
+    currentNodeId: 0,
+    onError: [Function (anonymous)]
+  },
+  klast: BigNumber { s: 1, e: 25, c: [ 766121720972, 45537572324692 ] },
+  block_time: BigNumber { s: 1, e: 12, c: [ 1711789576980 ] },
+  token_0: Token {
+    chainId: 'EiBZK_GGVP0H_fXVAM3j6EAuz3-B-l3ejxRSewi7qIBfSA==',
+    address: '19WrWze3XAoMa3Mwqys4rJMP6emZX2wfpH',
+    decimals: undefined,
+    symbol: undefined,
+    name: undefined,
+    isNative: false,
+    isToken: true
+  },
+  token_1: KOIN {
+    chainId: 'EiBZK_GGVP0H_fXVAM3j6EAuz3-B-l3ejxRSewi7qIBfSA==',
+    address: 'koin',
+    decimals: 8,
+    symbol: 'KOIN',
+    name: 'Koin',
+    isNative: true,
+    isToken: false
+  },
+  reserve_0: BigNumber { s: 1, e: 12, c: [ 8638433253253 ] },
+  reserve_1: BigNumber { s: 1, e: 12, c: [ 8895397946881 ] },
+  total_supply: BigNumber { s: 1, e: 12, c: [ 8544172553644 ] }
+}
+```
+
+
+## Run More Examples
 
 Example_6.js : returns Koin & USDT Pool Reserves and estimates the exchange rate by calculating pool impact.
 
@@ -85,53 +133,10 @@ async function go(asset_in){
 }
 ```
 
-[Koindx V2-SDK Examples](https://docs.koindx.com/sdk/v2-sdk/examples)
+Find more [Koindx V2-SDK Examples](https://docs.koindx.com/sdk/v2-sdk/examples)
 
 
-## Terminal
-
-```sh
-node example_4.js
-```
-
-Example #4 provides a glipse at USDT/Koin pair data. Run the aboce command in the termal to see the results.
-
-## Output
-
-```sh
-Pair {
-  chain: 'EiBZK_GGVP0H_fXVAM3j6EAuz3-B-l3ejxRSewi7qIBfSA==',
-  address: '16PVFQ6bwRnAZD7i3xmu6jX6MoG3vwYYgW',
-  provider: Provider {
-    rpcNodes: [ 'https://api.koinos.io' ],
-    currentNodeId: 0,
-    onError: [Function (anonymous)]
-  },
-  klast: BigNumber { s: 1, e: 25, c: [ 766121720972, 45537572324692 ] },
-  block_time: BigNumber { s: 1, e: 12, c: [ 1711789576980 ] },
-  token_0: Token {
-    chainId: 'EiBZK_GGVP0H_fXVAM3j6EAuz3-B-l3ejxRSewi7qIBfSA==',
-    address: '19WrWze3XAoMa3Mwqys4rJMP6emZX2wfpH',
-    decimals: undefined,
-    symbol: undefined,
-    name: undefined,
-    isNative: false,
-    isToken: true
-  },
-  token_1: KOIN {
-    chainId: 'EiBZK_GGVP0H_fXVAM3j6EAuz3-B-l3ejxRSewi7qIBfSA==',
-    address: 'koin',
-    decimals: 8,
-    symbol: 'KOIN',
-    name: 'Koin',
-    isNative: true,
-    isToken: false
-  },
-  reserve_0: BigNumber { s: 1, e: 12, c: [ 8638433253253 ] },
-  reserve_1: BigNumber { s: 1, e: 12, c: [ 8895397946881 ] },
-  total_supply: BigNumber { s: 1, e: 12, c: [ 8544172553644 ] }
-}
-```
+## Working with Numbers
 
 BigNumber.js is an mathmatic standard used for working with a wide range of numbers, strings and object types representing a numeric value.
 
