@@ -87,11 +87,14 @@ async function go(asset_in){
 
 [Koindx V2-SDK Examples](https://docs.koindx.com/sdk/v2-sdk/examples)
 
+
 ## Terminal
 
 ```sh
 node example_4.js
 ```
+
+Example #4 provides a glipse at USDT/Koin pair data. Run the aboce command in the termal to see the results.
 
 ## Output
 
