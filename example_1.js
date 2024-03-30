@@ -1,4 +1,4 @@
-const { ChainId } = require("@koindx/v2-sdk");
+const { ChainId } = require("@koindx/v2-sdk")
 
 async function go(){
     try{
@@ -6,7 +6,7 @@ async function go(){
         console.log(ChainId.MAINNET)
 
     } catch (error) {
-        console.error(error);
+        console.error(error)
     }
 }
 
