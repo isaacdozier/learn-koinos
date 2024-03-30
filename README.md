@@ -185,7 +185,9 @@ If you liked this guide, check out the step by step process to install a Kondor 
 If you are feeling extra generous you can donate to my Koinos wallet directly. Any of the handles below can be used in the Kondor wallet to send assets in-network without fees. Mana is used instead which charges over time. Network costs are an opportunity cost measured with time.
 
 KAP Domain: gucci.koin
+
 Nickname: @gucci
+
 Public Address: 15tagV4TF6AawesDrWNmzsTp64wWr1oQet
 
 ![Kondor Wallet](img/kondor.png)
