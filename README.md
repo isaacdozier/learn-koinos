@@ -174,5 +174,5 @@ Output: 8810421275766
 let operation = a.plus(b)
                 a.minus(b)
                 a.dividedBy(b)
-                a.time(b)
+                a.times(b)
 ```
