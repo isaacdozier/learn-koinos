@@ -5,6 +5,8 @@ const BigNumber = require("bignumber.js")
 const udst_dollars_in = 100
 
 // Convert usdt to BigNumber Object
+// Our number needs to be of a certain decimal length
+// 1 with 8x trailing 0's converts to a decimal length of -> [0.12345678]
 const asset = new BigNumber(udst_dollars_in * 100000000)
 
 // Koindx fee is needed for estimating exchange rate [ 0.25% ]
@@ -25,7 +27,7 @@ async function go(asset_in){
         const usdt = new Token(ChainId.MAINNET, usdt_contract_address)
 
         // This retrieves the Koin/USDT pool data by utilizing the Koindx SDK
-        const PAIR = await Fetcher.fetchPairData(ChainId.MAINNET, koin, usdt)
+        const PAIR = await Fetcher.fetchPairData(ChainId.MAINNET, usdt, koin)
 
         // Lets declare our availible reserves to get the pool ratio
         // This can be used to get an estimated exchange rate for any given pool
@@ -33,10 +35,10 @@ async function go(asset_in){
         let rsv_1 = PAIR.reserve_1
 
         // Calculate margin impact of asset-in - [ apply koindx fee = 0.25% ]
-        let impact = rsv_1.dividedBy(rsv_1.plus(asset_in * koindx_fee))
+        let impact = rsv_0.dividedBy(rsv_0.plus(asset_in * koindx_fee))
 
         // Calculate margin impact of asset-out
-        let est = rsv_0.minus(rsv_0.times(impact))
+        let est = rsv_1.minus(rsv_1.times(impact))
 
         console.log(est)
         
